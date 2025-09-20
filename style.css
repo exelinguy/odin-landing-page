@@ -5,6 +5,7 @@ body {
     min-height: 100vh; /*try removing this later to experiment*/
     font-family: Roboto, sans-serif;
     font-optical-sizing: auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -69,6 +70,8 @@ button {
     padding: 5px 20px;
     color: #E5E7EB;
     font-weight: bold;
+    min-width: 100px;
+    flex-shrink: 0;
 }
 
 .hero-right {
@@ -109,6 +112,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:10px;
 }
 .icon {
     border:3px solid #3882F6;
@@ -139,6 +143,41 @@ blockquote {
 .cite {
     align-self: flex-end;
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
+}
+
+.cta {
+   display: flex;
+   padding: 20px;
+   margin: 70px 10%;
+   gap: 100px;
+   background-color: #3882F6;
+   border-radius: 10px;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.cta-left-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+}
+
+.cta-left .text{
+    color: #E5E7EB;
+}
+
+.cta-right button{
+    border: 2px solid #E5E7EB;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #1F2937;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF8;
+    padding:30px;
 }
